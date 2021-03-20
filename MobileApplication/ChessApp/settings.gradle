@@ -1,0 +1,3 @@
+rootProject.name='ChessApp'
+include ':app'
+include ':openCVLibrary343'
