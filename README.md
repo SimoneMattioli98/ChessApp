@@ -16,7 +16,7 @@ Deep Learning for computer vision project. Android application for chess board d
   7 classes:
   <img src="/img/7classes.PNG" width="70%" height="70%"/>
   
-<br>
+<h2>Demo</h2>
 <img src="/img/Demo.gif" width="30%" height="30%"/>
 
 
