@@ -9,12 +9,12 @@ Deep Learning for computer vision project. Android application for chess board d
 <h2>Models</h2>
   We generated up to 13 models using different approaches and training techniques.
   13 classes approach:
-  <img src="/img/13classes.PNG" width="30%" height="30%"/>
+  <img src="/img/13classes.PNG" width="70%" height="70%"/>
   2 + 7 classes approach:
   2 classes:
-  <img src="/img/2classes.PNG" width="30%" height="30%"/>
+  <img src="/img/2classes.PNG" width="70%" height="70%"/>
   7 classes:
-  <img src="/img/7classes.PNG" width="30%" height="30%"/>
+  <img src="/img/7classes.PNG" width="70%" height="70%"/>
   
 <br>
 <img src="/img/Demo.gif" width="30%" height="30%"/>
