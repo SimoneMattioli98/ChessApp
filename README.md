@@ -3,7 +3,7 @@ Deep Learning for computer vision project. Android application for chess board d
 
 <h2>Datasets</h2>
   For the dataset we created our own by collenting chess board images, crop each box and label them.
-  We have a small dataset made of 12.500 images and an augmented one made by 110.600 images.
+  We have a small dataset made of 12.500 images and an augmented one made by 110.600 images.<br>
   All the datasets can be found <a href="https://drive.google.com/drive/folders/1DSgQq6am82dlhBs5cbA85SECThUErqKb?usp=sharing">here</a>
   
 <h2>Models</h2>
@@ -16,7 +16,11 @@ Deep Learning for computer vision project. Android application for chess board d
   7 classes:
   <img src="/img/7classes.PNG" width="70%" height="70%"/>
   
+  All the checkpoints can be found <a href="https://drive.google.com/drive/folders/1ra-H5OGlfVveFzrJjEBJtBPslbJNzMaF?usp=sharing">here</a>
+  
 <h2>Demo</h2>
 <img src="/img/Demo.gif" width="30%" height="30%"/>
+
+
 
 
