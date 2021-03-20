@@ -1,5 +1,6 @@
 # ChessApp
 Deep Learning for computer vision project. Android application for chess board detection and pieces prediction using a neural network for classification trained on home-made dataset and tested on different techniques. The application also creates a virtual representation of the board allowing the user to visualize the classification results. Working on a version that communicates with a flask server.
+<img src="/img/Demo.gif" width="30%" height="30%"/>
 
 <h2>Datasets</h2>
   For the dataset we created our own by collenting chess board images, crop each box and label them.
@@ -17,9 +18,7 @@ Deep Learning for computer vision project. Android application for chess board d
   <img src="/img/7classes.PNG" width="70%" height="70%"/>
   
   All the checkpoints can be found <a href="https://drive.google.com/drive/folders/1ra-H5OGlfVveFzrJjEBJtBPslbJNzMaF?usp=sharing">here</a>.
-  
-<h2>Demo</h2>
-<img src="/img/Demo.gif" width="30%" height="30%"/>
+ 
 
 
 
