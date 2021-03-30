@@ -1,5 +1,5 @@
 # ChessApp
-Deep Learning for computer vision project. Android application for chess board detection and pieces prediction using a neural network for classification trained on home-made dataset and tested on different techniques. The application also creates a virtual representation of the board allowing the user to visualize the classification results. 
+Deep Learning for computer vision project. Android application for chess board detection and pieces prediction using a neural network for classification trained on home-made dataset and tested on different techniques. The application also creates a virtual representation of the board allowing the user to visualize the classification results. <br>
 <img src="/img/Demo.gif" width="30%" height="30%"/>
 
 <h2>Datasets</h2>
