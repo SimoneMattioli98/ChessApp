@@ -33,13 +33,10 @@ import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 
-import org.opencv.android.BaseLoaderCallback;
-import org.opencv.android.LoaderCallbackInterface;
-import org.opencv.android.OpenCVLoader;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -79,21 +76,7 @@ public class PredictActivity extends AppCompatActivity {
     private int inputSize = 224;
     private Activity activity;
 
-    private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
-        @Override
-        public void onManagerConnected(int status) {
-            switch (status) {
-                case LoaderCallbackInterface.SUCCESS:
-                {
-                    Log.i(TAG, "OpenCV loaded successfully");
-                } break;
-                default:
-                {
-                    super.onManagerConnected(status);
-                } break;
-            }
-        }
-    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -202,6 +185,7 @@ public class PredictActivity extends AppCompatActivity {
 
 
     private void setUpView(){
+        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
         gallery.setVisibility(View.VISIBLE);
         title.setVisibility(View.VISIBLE);
         confirm.setVisibility(View.GONE);
@@ -211,18 +195,6 @@ public class PredictActivity extends AppCompatActivity {
         imageView.setImageResource(0);
     }
 
-    @Override
-    public void onResume()
-    {
-        super.onResume();
-        if (!OpenCVLoader.initDebug()) {
-            Log.d(TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
-            OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_4_0, this, mLoaderCallback);
-        } else {
-            Log.d(TAG, "OpenCV library found inside package. Using it!");
-            mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
-        }
-    }
 
 
 
@@ -343,9 +315,11 @@ public class PredictActivity extends AppCompatActivity {
 
                         }else{
                             Toast.makeText(getApplicationContext(), "Nothing found..", Toast.LENGTH_SHORT).show();
+                            setUpView();
                         }
                     }else{
                         Toast.makeText(getApplicationContext(), "Not enough return arguments..", Toast.LENGTH_SHORT).show();
+                        setUpView();
                     }
                 }
             });

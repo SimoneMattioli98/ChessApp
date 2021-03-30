@@ -36,7 +36,7 @@ android {
             }
 
             // change this path to your python 
-            buildPython "C:/Python/Python39/python.exe"
+            buildPython "C:/Python/Python38/python.exe"
         }
     }
 
@@ -62,7 +62,6 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation project(path: ':openCVLibrary343')
     implementation 'ru.bartwell:exfilepicker:2.1'
     implementation 'com.caverock:androidsvg-aar:1.4'
 }
